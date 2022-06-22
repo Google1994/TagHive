@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TickerDetailsFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_collapseMode="pin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/tvSymbolName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textAllCaps="true"
+                android:gravity="center"
+                tools:text="Crypto"
+                android:textColor="#ff0000"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:indeterminateTint="#ff0000"
+        android:progressTint="#ff0000"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBaseAsset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:textSize="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:text="Bit Coin"
+        android:textAllCaps="true"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/tvQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:text="Bit Coin"
+        app:layout_constraintTop_toBottomOf="@id/tvBaseAsset"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        tools:text="Bit Coin"
+        app:layout_constraintTop_toBottomOf="@id/tvQuote"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvOpenprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        tools:text="Bit Coin"
+        app:layout_constraintTop_toBottomOf="@id/tvSymbol"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvLowprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        tools:text="Bit Coin"
+        app:layout_constraintTop_toBottomOf="@id/tvOpenprice"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvHighprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        tools:text="Bit Coin"
+        app:layout_constraintTop_toBottomOf="@id/tvLowprice"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvLastprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        tools:text="Bit Coin"
+        app:layout_constraintTop_toBottomOf="@id/tvHighprice"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        tools:text="Bit Coin"
+        app:layout_constraintTop_toBottomOf="@id/tvLastprice"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvBidPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        tools:text="Bit Coin"
+        app:layout_constraintTop_toBottomOf="@id/tvVolume"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvAskPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        tools:text="Bit Coin"
+        app:layout_constraintTop_toBottomOf="@id/tvBidPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:visibility="gone"/>
+
+    <!--<androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/rvTicker"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

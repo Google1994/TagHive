@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/llSymbol"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:text="Bit Coin"
+        android:layout_marginStart="4dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/tvBidPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:padding="10dp"
+        android:text="Bit Coin"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvBaseAsset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:text="Bit Coin"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignBottom="@id/tvSymbol"
+        android:layout_toEndOf="@id/tvSymbol"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"
+        android:layout_marginHorizontal="10dp"/>
+
+</RelativeLayout>
